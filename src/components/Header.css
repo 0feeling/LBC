@@ -1,0 +1,36 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+.header-content h1 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+.publish-btn,
+.user-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.publish-btn:hover,
+.user-btn:hover {
+  background-color: #0056b3;
+}
