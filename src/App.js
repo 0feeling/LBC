@@ -6,11 +6,15 @@ import OneOffer from "./containers/OneOffer";
 import Publish from "./containers/Publish";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import SignUp from "./containers/SignUp";
+import SearchIcon from '@mui/icons-material/Search';
+import Pages from "./components/Pages";
 import AddBoxIcon from "@mui/icons-material/AddBox";
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
+import { fakeDatas } from "./Data/FakeDatas";
 
 const App = () => {
-  const username = "toto";
+  const username = "User";
 
   return (
     <Router>
@@ -28,7 +32,11 @@ const App = () => {
           <Route path="/signup" element={<SignUp />} />
 
           {/* # # # # # # # DEFAULT ROUTE : ALL OFFERS  # # # # # # # # # # # #  */}
-          <Route path="/" element={<Offers />} />
+          <Route path="/offers" element={<Offers />} />
+
+
+          <Route path="*" element={<h1>404 - Page Non trouvé</h1>} />
+
         </Routes>
       </main>
       <Footer />

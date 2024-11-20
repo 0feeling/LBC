@@ -1,0 +1,45 @@
+h1 {
+  color: #ffffff;
+}
+
+.offers {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.offer-item {
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: left;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+}
+
+.offer-item img {
+  max-width: 200px;
+  max-height: 200px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.offer-item .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.offer-item .info .user {
+  margin-bottom: 10px;
+}
+
+.offer-item .info .details {
+  text-align: left;
+}

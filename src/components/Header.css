@@ -1,4 +1,9 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -7,13 +12,24 @@
   border-bottom: 1px solid #ddd;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .header-content h1 {
   margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 nav {
   display: flex;
+  align-items: center;
   gap: 15px;
+  flex-grow: 1; 
 }
 
 .publish-btn,
@@ -23,14 +39,57 @@ nav {
   gap: 5px;
   padding: 10px 15px;
   border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: #fff;
+  border-radius: 15px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(236 90 19);
   cursor: pointer;
   text-decoration: none;
+  border-radius: 15px;
 }
 
 .publish-btn:hover,
 .user-btn:hover {
-  background-color: #0056b3;
+  background-color: rgb(234, 123, 67);
+  border-radius: 15px;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Permet au conteneur de recherche de prendre l'espace disponible */
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  color: rgb(236 90 19);
+  pointer-events: none;
+}
+
+#site-search {
+  border-radius: 15px;
+  border: solid rgb(236 90 19);
+  width: 100%; /* Permet à l'input de recherche de prendre toute la largeur disponible */
+  height: 2.5rem;
+  padding-right: 35px;
+  padding-left: 10px;
+  outline: none;
+}
+
+#site-search:hover {
+  border: solid rgb(234, 123, 67);
+}
+
+.user-btn {
+  margin-left: auto; 
+  margin-right: 30px; 
+}
+
+.header-content h1 {
+  margin-right: 20px;
+}
+
+.publish-btn {
+  margin-right: 8px; 
 }
